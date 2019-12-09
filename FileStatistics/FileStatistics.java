@@ -40,7 +40,7 @@ public class FileStatistics{
 			while((i=fr.read())!=-1){
 				str+=(char)i;
 			}
-			String [] all = str.split("\\s+");
+			String [] all = str.split(" ");
 			wordCount = all.length;
 		}catch(FileNotFoundException e){e.printStackTrace();}
 		catch(IOException e){e.printStackTrace();}
@@ -58,7 +58,7 @@ public class FileStatistics{
 			while((n=fr.read())!=-1){
 			str+=(char)n;
 			}
-			String [] sentences = str.split("[!?.:]+");
+			String [] sentences = str.split("[!,;?.:]+");
 			nbSentences = sentences.length;
 		}catch(FileNotFoundException e){e.printStackTrace();}
 		catch(IOException e){e.printStackTrace();}
@@ -100,7 +100,6 @@ public class FileStatistics{
 					map.put(allWords[n],1);
 				}
 			}
-			System.out.println(map);
 			Set<Entry<String,Integer>> set = map.entrySet();
 			Iterator<Entry<String,Integer>>  it = set.iterator();
 		
@@ -108,7 +107,6 @@ public class FileStatistics{
 			Entry<String,Integer> entry = it.next();
 
 			fw.write(entry.getKey()+" : "+entry.getValue()+"\n");
-			System.out.println(entry.getKey()+" : "+entry.getValue());
 		}
 		fw.close();
 

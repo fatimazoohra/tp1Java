@@ -1,0 +1,1 @@
+On parking, veut simuler un parking, de ​N ​places. ces places avec un un Chaque Chaque voiture aura un identifiant. simuler simuler simuler?

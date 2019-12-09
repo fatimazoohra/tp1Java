@@ -1,0 +1,4 @@
+this saves all counts :)
+number of caracters: 145
+number of words    : 23
+number of sentences: 5

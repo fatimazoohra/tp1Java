@@ -1,0 +1,16 @@
+de : 1
+voiture : 1
+parking, : 2
+​places. : 1
+simuler : 3
+identifiant. : 1
+aura : 1
+ces : 1
+places : 1
+veut : 1
+un : 4
+Chaque : 2
+​N : 1
+simuler? : 1
+avec : 1
+On : 1
